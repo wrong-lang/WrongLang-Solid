@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Sarabun&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { @apply dark:text-white duration-100; }
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-family: 'Kanit', sans-serif;
+}
+
+input, a, button {
+  font-family: 'Sarabun', sans-serif;
+}
+
+.main-container { @apply grid h-screen place-items-center dark:bg-black; }
+
+.page-container { @apply flex flex-col gap-6 items-center justify-center w-full; }
+
+.title-container { @apply flex flex-row items-end justify-center animate-bounce; }
+
+.title-img { @apply md:w-[85px] md:h-[85px] w-[70px] h-[70px]; }
+
+.title-text { @apply md:text-8xl text-6xl italic font-black; }
+
+.input-container { @apply flex flex-col w-full gap-4 justify-center items-center max-w-2xl; }
+
+.input-box { @apply w-full rounded-lg border-2 border-blue-400 focus:ring focus:ring-blue-500 ring-offset-2 outline-none p-3 duration-200 shadow-lg; }
+
+.buttons-container { @apply grid md:grid-rows-3 md:grid-flow-col md:grid-cols-none grid-cols-3 grid-flow-row md:gap-4 gap-2 w-full max-w-2xl; }
+
+.buttons-label { @apply md:text-lg text-sm self-center md:text-left text-center; }
+
+.buttons-group { @apply flex md:flex-row flex-col gap-4; }
