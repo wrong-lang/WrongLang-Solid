@@ -119,7 +119,7 @@ const App: Component = () => {
             </div>
           </div>
           <div class="absolute top-2 left-[1/2] translate-x-[1/2]">
-            <button onClick={() => location.href = 'https://www.tin-sci.me/'}>
+            <button onClick={() => location.href = 'https://github.com/wrong-lang/wrong-lang'}>
               Made with <i class="fa-solid fa-heart"/> by <span class="underline">Tinnaphat "Tin" Somsang</span>
             </button>
           </div>
