@@ -101,7 +101,7 @@ const App: Component = () => {
           </div>
 
           {/* Top Bar Elements */}
-          <div class="flex flex-row top-0">
+          <div>
             <div class="absolute top-2 right-2">
               <button onClick={() => setState({ ...state, modal: true })}>
                 <i class="fa-solid fa-circle-question text-2xl" />
@@ -118,15 +118,13 @@ const App: Component = () => {
               </button>
             </div>
           </div>
+          <div class="absolute top-2 left-[1/2] translate-x-[1/2]">
+            <button onClick={() => location.href = 'https://www.tin-sci.me/'}>
+              Made with <i class="fa-solid fa-heart"/> by <span class="underline">Tinnaphat "Tin" Somsang</span>
+            </button>
+          </div>
 
           {/* Bottom Bar Elements */}
-          <div class="flex flex-row w-full justify-center absolute bottom-4">
-            <div>
-              <button onClick={() => location.href = 'https://www.tin-sci.me/'}>
-                Made with <i class="fa-solid fa-heart"/> by <span class="underline">Tinnaphat "Tin" Somsang</span>
-              </button>
-            </div>
-          </div>
           <div class="absolute bottom-4 right-4">
             <div class="flex flex-row gap-2">
               <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.wrong-lang.click%2F&quote=สำหรับใครที่ชอบลืมเปลี่ยนภาษาเวลาพิมพ์%20ใช้นี่สิ!">
